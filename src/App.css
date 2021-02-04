@@ -1,3 +1,6 @@
+:root{
+  --primary-peach:#ffe8e8
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header-wrapper {
+  position: relative;
+  background: url(cover.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+} 
+.main-information {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-information h1 {
+  color: var(--primary-peach);
+  text-transform: uppercase;
+}
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-peach);
+}
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
 }
