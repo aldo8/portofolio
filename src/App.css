@@ -1,10 +1,14 @@
 :root{
-  --primary-peach:#ffe8e8
+  --primary-color:#ffe8e8;
+  --secondary-color:#ffdcdc;
+  --third-color:#ffdcdc;
 }
 .App {
   text-align: center;
 }
-
+nav {
+  z-index: 2;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -45,8 +49,22 @@
   background: url(cover.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 95vh;
+  height: 100vh;
 } 
+.header-wrapper2 {
+  position: relative;
+  background-color: var(--primary-color);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.header-wrapper3 {
+  position: relative;
+  background-color: var(--third-color);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 .main-information {
   display: flex;
   position: absolute;
@@ -60,14 +78,16 @@
   text-align: center;
 }
 .main-information h1 {
-  color: var(--primary-peach);
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 .typed-text {
   font-size: 2rem;
-  color: var(--primary-peach);
+  color: var(--primary-color);
 }
 .tsparticles-canvas-el{
   position: absolute;
+  width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
